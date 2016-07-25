@@ -1,0 +1,15 @@
+directory = HOMEDIRHERE/downloads
+session = HOMEDIRHERE/.rtorrent-session
+schedule = watch_directory,1,1,load_start=HOMEDIRHERE/watch/*.torrent
+schedule = low_diskspace,5,60,close_low_diskspace=100M
+port_range = 61040-61050
+encryption = allow_incoming, try_outgoing, enable_retry
+scgi_port = 127.0.0.1:5000
+dht = disable
+port_random = yes
+pieces.hash.on_completion.set = no
+peer_exchange = no
+encoding_list = UTF-8
+check_hash = no
+system.file_allocate.set = yes
+network.http.ssl_verify_peer.set = 0
